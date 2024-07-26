@@ -79,28 +79,10 @@ else
 	echo -e "\e[31mError: the following script is missing: Cinnamon-setup.sh\e[0m"
 	exit
 fi
-echo -e "\e[34m             ...-:::::-..."
-echo "          .-MMMMMMMMMMMMMMM-."
-echo "      .-MMMM'..-:::::::-..'MMMM-."
-echo "    .:MMMM.:MMMMMMMMMMMMMMM:.MMMM:."
-echo "   -MMM-M---MMMMMMMMMMMMMMMMMMM.MMM-"
-echo " ':MMM:MM'  :MMMM:....::-...-MMMM:MMM:'"
-echo " :MMM:MMM'  :MM:'  ''    ''  ':MMM:MMM:"
-echo ".MMM.MMMM'  :MM.  -MM.  .MM-  'MMMM.MMM."
-echo ":MMM:MMMM'  :MM.  -MM-  .MM:  'MMMM-MMM:"
-echo ":MMM:MMMM'  :MM.  -MM-  .MM:  'MMMM:MMM:"
-echo ":MMM:MMMM'  :MM.  -MM-  .MM:  'MMMM-MMM:"
-echo ".MMM.MMMM'  :MM:--:MM:--:MM:  'MMMM.MMM."
-echo " :MMM:MMM-  '-MMMMMMMMMMMM-'  -MMM-MMM:"
-echo "  :MMM:MMM:'                ':MMM:MMM:"
-echo "   .MMM.MMMM:--------------:MMMM.MMM."
-echo "     '-MMMM.-MMMMMMMMMMMMMMM-.MMMM-'"
-echo "       '.-MMMM''--:::::--''MMMM-.'"
-echo "            '-MMMMMMMMMMMMM-'"
-echo -e "               ''-:::::-''\e[0m"
-echo -e "Welcome to the \e[32mLinux Mint \e[34mArch Edition\e[0m Bash Installer!"
+
+echo -e "Welcome to the \e[32mLinux Mint \e[34m Edition\e[0m Bash Installer!"
 if (whiptail --title "Linux Mint Arch Edition | Desktop Environment" --yesno "Please choose your edition:\nCinnamon\nCutefish" 10 60 --yes-button "Cinnamon" --no-button "Cutefish"); then
 	bash Cinnamon-setup.sh
-else
-	bash Cutefish-setup.sh
+ else
+        exit
 fi
